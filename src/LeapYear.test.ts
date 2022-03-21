@@ -5,11 +5,11 @@ describe('isLeapYear should', () => {
     expect(isLeapYear(year)).toBe(true)
   })
 
-  it('return false if 1 is passed', () => {
-    expect(isLeapYear(1)).toBe(false)
-  })
-
   it.each([[2008,2012,2016]])('return true if year is divisible by 4 but not by 100', () => {
     expect(isLeapYear(2008)).toBe(true)
+  })
+
+  it.each([[1,1700,1800,1900,2100, 2017, 2018, 2019]])('return false another cases', () => {
+    expect(isLeapYear(1)).toBe(false)
   })
 })
