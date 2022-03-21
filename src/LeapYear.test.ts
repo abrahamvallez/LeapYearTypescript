@@ -8,5 +8,9 @@ describe('isLeapYear should', () => {
   it('return false if 1 is passed', () => {
     expect(isLeapYear(1)).toBe(false)
   })
+
+  it('return true if 2000 is passed', () => {
+    expect(isLeapYear(2000)).toBe(true)
+  })
   
 })
