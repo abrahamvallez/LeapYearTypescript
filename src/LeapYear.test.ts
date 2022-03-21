@@ -12,4 +12,12 @@ describe('isLeapYear should', () => {
   it('return true if 2008 is passed', () => {
     expect(isLeapYear(2008)).toBe(true)
   })
+
+  it('return true if 2012 is passed', () => {
+    expect(isLeapYear(2012)).toBe(true)
+  })
+
+  it('return true if 2016 is passed', () => {
+    expect(isLeapYear(2016)).toBe(true)
+  })
 })
